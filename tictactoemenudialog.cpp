@@ -33,7 +33,6 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 #include "tictactoegame.h"
 #include "tictactoewidget.h"
 #include "trace.h"
-#include "richelbilderbeekprogram.h"
 #pragma GCC diagnostic pop
 
 ribi::tictactoe::TicTacToeMenuDialog::TicTacToeMenuDialog()
@@ -136,15 +135,6 @@ ribi::Help ribi::tictactoe::TicTacToeMenuDialog::GetHelp() const noexcept
       GetAbout().GetFileTitle() + " --1h -2h"
     }
   );
-}
-
-boost::shared_ptr<const ribi::Program> ribi::tictactoe::TicTacToeMenuDialog::GetProgram() const noexcept
-{
-  const boost::shared_ptr<const ribi::Program> p {
-    new ProgramTicTacToe
-  };
-  assert(p);
-  return p;
 }
 
 std::string ribi::tictactoe::TicTacToeMenuDialog::GetVersion() const noexcept
