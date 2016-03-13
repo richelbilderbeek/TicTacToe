@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>R.png</file>
+        <file>TicTacToeModern.png</file>
+        <file>TicTacToeO.png</file>
+        <file>TicTacToeRetro.png</file>
+        <file>TicTacToeX.png</file>
+        <file>TicTacToeComputer.png</file>
+        <file>TicTacToeHuman.png</file>
+    </qresource>
+</RCC>
