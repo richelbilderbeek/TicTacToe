@@ -1,19 +1,19 @@
-include(../../Libraries/BoostAll.pri)
-include(../../Libraries/Wt.pri)
-include(../../WebApplication.pri)
+include(../RibiLibraries/BoostAll.pri)
+include(../RibiLibraries/Wt.pri)
+include(../RibiLibraries/WebApplication.pri)
 
-include(../../Libraries/GeneralConsole.pri)
-include(../../Libraries/GeneralWeb.pri)
+include(../RibiLibraries/GeneralConsole.pri)
+include(../RibiLibraries/GeneralWeb.pri)
 
 #Specific, console
-include(../../Classes/CppCanvas/CppCanvas.pri)
-include(../../Classes/CppDotMatrix/CppDotMatrix.pri)
-include(../../Classes/CppImageCanvas/CppImageCanvas.pri)
-include(../../Classes/CppTextCanvas/CppTextCanvas.pri)
-include(../../Classes/CppTicTacToe/CppTicTacToe.pri)
+include(../RibiClasses/CppCanvas/CppCanvas.pri)
+include(../RibiClasses/CppDotMatrix/CppDotMatrix.pri)
+include(../RibiClasses/CppImageCanvas/CppImageCanvas.pri)
+include(../RibiClasses/CppTextCanvas/CppTextCanvas.pri)
+include(../RibiClasses/CppTicTacToe/CppTicTacToe.pri)
 
 #Specific, web
-include(../../Classes/CppWtTicTacToeWidget/CppWtTicTacToeWidget.pri)
-include(GameTicTacToeWebsite.pri)
+include(../RibiClasses/CppWtTicTacToeWidget/CppWtTicTacToeWidget.pri)
+include(TicTacToeWebsite.pri)
 
 SOURCES += wtmain.cpp

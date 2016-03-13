@@ -1,11 +1,11 @@
-include(../../Games/GameTicTacToe/GameTicTacToeConsole.pri)
+include(../TicTacToe/TicTacToeConsole.pri)
 
 SOURCES += \
-    ../../Games/GameTicTacToe/sfmltictactoewinnerdialog.cpp \
-    ../../Games/GameTicTacToe/sfmltictactoemenudialog.cpp \
-    ../../Games/GameTicTacToe/sfmltictactoegamedialog.cpp
+    ../TicTacToe/sfmltictactoewinnerdialog.cpp \
+    ../TicTacToe/sfmltictactoemenudialog.cpp \
+    ../TicTacToe/sfmltictactoegamedialog.cpp
 
 HEADERS  += \
-    ../../Games/GameTicTacToe/sfmltictactoewinnerdialog.h \
-    ../../Games/GameTicTacToe/sfmltictactoemenudialog.h \
-    ../../Games/GameTicTacToe/sfmltictactoegamedialog.h
+    ../TicTacToe/sfmltictactoewinnerdialog.h \
+    ../TicTacToe/sfmltictactoemenudialog.h \
+    ../TicTacToe/sfmltictactoegamedialog.h

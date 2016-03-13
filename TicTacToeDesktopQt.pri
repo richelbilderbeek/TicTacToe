@@ -1,18 +1,18 @@
-include(../../Games/GameTicTacToe/GameTicTacToeConsole.pri)
+include(../TicTacToe/TicTacToeConsole.pri)
 
 SOURCES += \
-    ../../Games/GameTicTacToe/qttictactoewinnerdialog.cpp \
-    ../../Games/GameTicTacToe/qttictactoemenudialog.cpp \
-    ../../Games/GameTicTacToe/qttictactoegamedialog.cpp \
-    ../../Games/GameTicTacToe/qttictactoecanvas.cpp
+    ../TicTacToe/qttictactoewinnerdialog.cpp \
+    ../TicTacToe/qttictactoemenudialog.cpp \
+    ../TicTacToe/qttictactoegamedialog.cpp \
+    ../TicTacToe/qttictactoecanvas.cpp
 
 HEADERS  += \
-    ../../Games/GameTicTacToe/qttictactoewinnerdialog.h \
-    ../../Games/GameTicTacToe/qttictactoemenudialog.h \
-    ../../Games/GameTicTacToe/qttictactoegamedialog.h \
-    ../../Games/GameTicTacToe/qttictactoecanvas.h
+    ../TicTacToe/qttictactoewinnerdialog.h \
+    ../TicTacToe/qttictactoemenudialog.h \
+    ../TicTacToe/qttictactoegamedialog.h \
+    ../TicTacToe/qttictactoecanvas.h
 
 FORMS += \
-    ../../Games/GameTicTacToe/qttictactoewinnerdialog.ui \
-    ../../Games/GameTicTacToe/qttictactoemenudialog.ui \
-    ../../Games/GameTicTacToe/qttictactoegamedialog.ui
+    ../TicTacToe/qttictactoewinnerdialog.ui \
+    ../TicTacToe/qttictactoemenudialog.ui \
+    ../TicTacToe/qttictactoegamedialog.ui

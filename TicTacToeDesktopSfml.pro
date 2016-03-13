@@ -1,10 +1,11 @@
-include(../../DesktopApplication.pri)
-include(../../Libraries/Boost.pri)
-include(../../Libraries/GeneralConsole.pri)
-include(../../Libraries/Sfml.pri)
+include(../RibiLibraries/DesktopApplication.pri)
+include(../RibiLibraries/Boost.pri)
+include(../RibiLibraries/GeneralConsole.pri)
+include(../RibiLibraries/Sfml.pri)
 
-include(../../Classes/CppTicTacToe/CppTicTacToe.pri)
+include(../RibiClasses/CppTicTacToe/CppTicTacToe.pri)
+include(../RibiClasses/CppDotMatrix/CppDotMatrix.pri)
 
-include(GameTicTacToeDesktopSfml.pri)
+include(TicTacToeDesktopSfml.pri)
 
 SOURCES += sfmlmain.cpp

@@ -50,9 +50,6 @@ ribi::tictactoe::SfmlGameDialog::SfmlGameDialog(
   m_tictactoe->m_signal_has_winner.connect(
     boost::bind(&ribi::tictactoe::SfmlGameDialog::HasWinner,this,boost::lambda::_1)
   );
-  //QObject::connect(m_tictactoe.get(),&QtTicTacToeWidget::m_signal_has_winner,
-  //  this,&ribi::tictactoe::SfmlGameDialog::HasWinner
-  //);
 
   {
     //Put the dialog in the screen center
