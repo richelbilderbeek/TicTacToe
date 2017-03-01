@@ -46,8 +46,6 @@ public:
     QWidget *parent = 0);
   boost::shared_ptr<const Widget> GetWidget() const { return m_widget; }
 
-  ///Called every second, makes the AI do a move
-  void OnTimer() noexcept;
   void Restart() noexcept;
 
   ///mousePressEvent must be public for TicTacToeTest's
@@ -59,6 +57,10 @@ public:
 
   boost::signals2::signal<void(QtTicTacToeWidget*)> m_signal_changed;
   boost::signals2::signal<void(QtTicTacToeWidget*)> m_signal_has_winner;
+
+public slots:
+  ///Called every second, makes the AI do a move
+  void OnTimer() noexcept;
 
 protected:
   void paintEvent(QPaintEvent *) noexcept;

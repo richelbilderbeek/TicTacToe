@@ -33,13 +33,13 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 #include "qtaboutdialog.h"
 //#include "qtcanvas.h"
 //#include "qtcanvasdialog.h"
-#include "testtimer.h"
+
 #include "qttictactoecanvas.h"
 #include "qttictactoegamedialog.h"
 #include "qttictactoewidget.h"
 #include "tictactoemenudialog.h"
 #include "tictactoeai.h"
-#include "trace.h"
+
 #include "ui_qttictactoemenudialog.h"
 #pragma GCC diagnostic pop
 

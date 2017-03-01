@@ -6,9 +6,9 @@
 
 #include <cassert>
 
-#include "trace.h"
+
 #include "ui_qttictactoewinnerdialog.h"
-#include "testtimer.h"
+
 #pragma GCC diagnostic pop
 
 ribi::tictactoe::QtTicTacToeWinnerDialog::QtTicTacToeWinnerDialog(QWidget *parent) :
