@@ -109,15 +109,3 @@ void ribi::tictactoe::QtTicTacToeGameDialog::keyPressEvent(QKeyEvent *event)
     return;
   }
 }
-
-#ifndef NDEBUG
-void ribi::tictactoe::QtTicTacToeGameDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif

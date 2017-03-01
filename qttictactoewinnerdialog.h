@@ -50,10 +50,6 @@ public:
 
 private:
   Ui::QtTicTacToeWinnerDialog *ui;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 } //~namespace tictactoe

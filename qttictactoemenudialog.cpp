@@ -109,7 +109,6 @@ void ribi::tictactoe::QtTicTacToeMenuDialog::Test() noexcept
   const auto player1 = boost::make_shared<AiEnforceDraw>();
   const auto player2 = boost::make_shared<AiPlayRandom>();
   QtTicTacToeWidget(player1,player2);
-  const TestTimer test_timer(__func__,__FILE__,1.0);
   #endif // SUPPORT_RETRO_VERSION_OF_TICTACTOE_AGAIN_20150918
 }
 #endif
