@@ -1,18 +1,18 @@
-include(../TicTacToe/TicTacToeConsole.pri)
+include(TicTacToeConsole.pri)
 
 SOURCES += \
-    ../TicTacToe/qttictactoewinnerdialog.cpp \
-    ../TicTacToe/qttictactoemenudialog.cpp \
-    ../TicTacToe/qttictactoegamedialog.cpp \
-    ../TicTacToe/qttictactoecanvas.cpp
+    $$PWD/qttictactoewinnerdialog.cpp \
+    $$PWD/qttictactoemenudialog.cpp \
+    $$PWD/qttictactoegamedialog.cpp \
+    $$PWD/qttictactoecanvas.cpp
 
 HEADERS  += \
-    ../TicTacToe/qttictactoewinnerdialog.h \
-    ../TicTacToe/qttictactoemenudialog.h \
-    ../TicTacToe/qttictactoegamedialog.h \
-    ../TicTacToe/qttictactoecanvas.h
+    $$PWD/qttictactoewinnerdialog.h \
+    $$PWD/qttictactoemenudialog.h \
+    $$PWD/qttictactoegamedialog.h \
+    $$PWD/qttictactoecanvas.h
 
 FORMS += \
-    ../TicTacToe/qttictactoewinnerdialog.ui \
-    ../TicTacToe/qttictactoemenudialog.ui \
-    ../TicTacToe/qttictactoegamedialog.ui
+    $$PWD/qttictactoewinnerdialog.ui \
+    $$PWD/qttictactoemenudialog.ui \
+    $$PWD/qttictactoegamedialog.ui

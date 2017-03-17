@@ -7,4 +7,4 @@ HEADERS  += \
     $$PWD/tictactoemenudialog.h
 
 RESOURCES += \
-    $$PWD/TicTacToe/TicTacToe.qrc
+    $$PWD/TicTacToe.qrc
