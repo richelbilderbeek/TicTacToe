@@ -7,7 +7,7 @@ include(../RibiLibraries/GeneralWeb.pri)
 
 #Specific, console
 include(../RibiClasses/CppCanvas/CppCanvas.pri)
-include(../RibiClasses/CppDotMatrix/CppDotMatrix.pri)
+include(../DotMatrix/DotMatrix.pri)
 include(../RibiClasses/CppImageCanvas/CppImageCanvas.pri)
 include(../RibiClasses/CppTextCanvas/CppTextCanvas.pri)
 include(../RibiClasses/CppTicTacToe/CppTicTacToe.pri)
