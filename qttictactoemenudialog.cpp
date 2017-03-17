@@ -1,23 +1,3 @@
-//---------------------------------------------------------------------------
-/*
-TicTacToe, tic-tac-toe game
-Copyright (C) 2010-2015 Richel Bilderbeek
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
-GNU General Public License for more details.
-You should have received a copy of the GNU General Public License
-along with this program.If not, see <http://www.gnu.org/licenses/>.
-*/
-//---------------------------------------------------------------------------
-//From http://www.richelbilderbeek.nl/GameTicTacToe.htm
-//---------------------------------------------------------------------------
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Weffc++"
 #pragma GCC diagnostic ignored "-Wunused-local-typedefs"
@@ -47,10 +27,6 @@ ribi::tictactoe::QtTicTacToeMenuDialog::QtTicTacToeMenuDialog(QWidget *parent) :
     QtHideAndShowDialog(parent),
     ui(new Ui::QtTicTacToeMenuDialog)
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
-
   ui->setupUi(this);
 }
 
@@ -80,38 +56,6 @@ void ribi::tictactoe::QtTicTacToeMenuDialog::on_button_quit_clicked()
 {
   close();
 }
-
-#ifndef NDEBUG
-void ribi::tictactoe::QtTicTacToeMenuDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  TicTacToeMenuDialog();
-  {
-    const boost::shared_ptr<Ai> player1;
-    const boost::shared_ptr<Ai> player2;
-    QtTicTacToeGameDialog d(player1,player2);
-    assert(!d.GetVersion().empty());
-  }
-  #ifdef SUPPORT_RETRO_VERSION_OF_TICTACTOE_AGAIN_20150918
-  {
-    QtCanvas * const qtcanvas {
-      new QtTicTacToeCanvas
-    };
-    boost::scoped_ptr<QtCanvasDialog> d {
-      new QtCanvasDialog(qtcanvas)
-    };
-    assert(d);
-  }
-  const auto player1 = boost::make_shared<AiEnforceDraw>();
-  const auto player2 = boost::make_shared<AiPlayRandom>();
-  QtTicTacToeWidget(player1,player2);
-  #endif // SUPPORT_RETRO_VERSION_OF_TICTACTOE_AGAIN_20150918
-}
-#endif
 
 #ifdef SUPPORT_RETRO_VERSION_OF_TICTACTOE_AGAIN_20150918
 void ribi::tictactoe::QtTicTacToeMenuDialog::on_button_start_old_school_clicked()

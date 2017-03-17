@@ -19,6 +19,8 @@ install:
   # Qt5
   - sudo apt-get install -qq libqt5webkit5-dev qtdeclarative5-dev
   - export QMAKE=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake
+  # Wt
+  - sudo apt-get install witty witty-dbg witty-dev witty-doc
   # cppcheck
   - sudo apt-get install cppcheck
   # Codecov

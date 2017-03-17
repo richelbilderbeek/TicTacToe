@@ -67,10 +67,6 @@ struct Game
   private:
   boost::shared_ptr<Board> m_board;
   Player m_current_player;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 std::ostream& operator<<(std::ostream& os,const Game& t) noexcept;
