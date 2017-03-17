@@ -17,7 +17,6 @@ include(../RibiClasses/CppTicTacToe/CppTicTacToe.pri)
 #Specific, web
 include(../RibiClasses/CppWtTicTacToeWidget/CppWtTicTacToeWidget.pri)
 include(TicTacToe.pri)
-include(TicTacToeConsole.pri)
 include(TicTacToeWebsite.pri)
 
 SOURCES += wtmain.cpp
