@@ -39,7 +39,7 @@ script:
   # Console
   - qmake TicTacToeConsole.pro
   - make debug
-  - ./TicTacToeConsole &
+  #- ./TicTacToeConsole & # Do not, this causes Travis CI to play the game with the next commands
   # Desktop Qt
   - qmake TicTacToeDesktopQt.pro
   - make
