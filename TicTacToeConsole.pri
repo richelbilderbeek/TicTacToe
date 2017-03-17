@@ -1,11 +1,10 @@
-INCLUDEPATH += \
-    ../TicTacToe
+INCLUDEPATH += $$PWD
 
 SOURCES += \
-    ../TicTacToe/tictactoemenudialog.cpp
+    $$PWD/tictactoemenudialog.cpp
 
 HEADERS  += \
-    ../TicTacToe/tictactoemenudialog.h
+    $$PWD/tictactoemenudialog.h
 
 RESOURCES += \
-    ../TicTacToe/TicTacToe.qrc
+    $$PWD/TicTacToe/TicTacToe.qrc

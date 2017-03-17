@@ -1,9 +1,9 @@
-include(../TicTacToe/TicTacToeConsole.pri)
+include(TicTacToeConsole.pri)
 
 SOURCES += \
-    ../TicTacToe/wttictactoemenudialog.cpp \
-    ../TicTacToe/wttictactoegamedialog.cpp
+    $$PWD/wttictactoemenudialog.cpp \
+    $$PWD/wttictactoegamedialog.cpp
 
 HEADERS  += \
-    ../TicTacToe/wttictactoemenudialog.h \
-    ../TicTacToe/wttictactoegamedialog.h
+    $$PWD/wttictactoemenudialog.h \
+    $$PWD/wttictactoegamedialog.h
