@@ -17,9 +17,7 @@
 
 ribi::tictactoe::TicTacToeMenuDialog::TicTacToeMenuDialog()
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
+
 }
 
 int ribi::tictactoe::TicTacToeMenuDialog::ExecuteSpecific(const std::vector<std::string>& args) noexcept
@@ -135,18 +133,3 @@ std::vector<std::string> ribi::tictactoe::TicTacToeMenuDialog::GetVersionHistory
     "2015-09-18: version 1.9: removed retro version"
   };
 }
-
-
-#ifndef NDEBUG
-void ribi::tictactoe::TicTacToeMenuDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  {
-    TicTacToeMenuDialog().Execute( { "TicTacToeMenuDialog","--1h","--2h", "--silent" } );
-  }
-}
-#endif

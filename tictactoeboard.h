@@ -113,10 +113,6 @@ struct Board
   ///NoEmptySquares determines whether there are no empty squares left.
   bool NoEmptySquares() const noexcept;
 
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
-
   friend std::ostream& operator<<(std::ostream& os,const Board& t) noexcept;
 };
 

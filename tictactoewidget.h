@@ -55,10 +55,6 @@ struct Widget
 
   int m_x;
   int m_y;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 } //~namespace tictactoe

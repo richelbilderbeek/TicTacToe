@@ -15,9 +15,7 @@ ribi::tictactoe::Widget::Widget()
     m_x{1},
     m_y{1}
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
+
 }
 
 bool ribi::tictactoe::Widget::CanSelect(const int x, const int y) const noexcept
@@ -95,20 +93,6 @@ void ribi::tictactoe::Widget::Select(const int x, const int y) noexcept
     m_signal_changed();
   }
 }
-
-#ifndef NDEBUG
-void ribi::tictactoe::Widget::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  
-  Widget w;
-  assert(!w.GetVersion().empty());
-}
-#endif
 
 std::string ribi::tictactoe::Widget::ToTextCanvas() const noexcept
 {
