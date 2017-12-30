@@ -11,7 +11,7 @@ int ribi::tictactoe::PlayerToState(const ribi::tictactoe::Player player) noexcep
     case Player::player2: return 2;
   }
   assert(!"Should not get here");
-  throw std::logic_error("TicTacToe::PlayerToState: unknown player");
+  return 1;
 }
 
 ribi::tictactoe::Player ribi::tictactoe::StateToPlayer(const int state)

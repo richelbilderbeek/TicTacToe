@@ -13,7 +13,7 @@ ribi::tictactoe::Player ribi::tictactoe::Helper::GetOtherPlayer(
     case Player::player2: return Player::player1;
   }
   assert(!"Should not get here");
-  throw std::logic_error("GetOtherPlayer: unknown player");
+  return Player::player2;
 }
 
 int ribi::tictactoe::Helper::IntPower(const int base, const int exponent) const noexcept
@@ -39,7 +39,7 @@ ribi::tictactoe::Square ribi::tictactoe::Helper::PlayerToSquare(const ribi::tict
     case Player::player2: return Square::player2;
   }
   assert(!"Should not get here");
-  throw std::logic_error("PlayerToSquare: unknown player");
+  return Square::player1;
 }
 
 ribi::tictactoe::Player ribi::tictactoe::Helper::SquareToPlayer(const ribi::tictactoe::Square square) const

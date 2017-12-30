@@ -7,6 +7,8 @@ develop|[![Build Status](https://travis-ci.org/richelbilderbeek/TicTacToe.svg?br
 
 C++ tic-tac-toe game
 
+![Qt game dialog](Screenshots/QtGameDialog.png)
+
 ## External links
 
  * [Richel Bilderbeek's games](https://github.com/richelbilderbeek/Games)

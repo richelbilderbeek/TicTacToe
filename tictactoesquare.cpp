@@ -12,7 +12,7 @@ int ribi::tictactoe::SquareToState(const ribi::tictactoe::Square square) noexcep
     case Square::player2: return 2;
   }
   assert(!"Should not get here");
-  throw std::logic_error("TicTacToe::SquareToState: unknown square");
+  return 0;
 }
 
 std::string ribi::tictactoe::SquareToStr(const tictactoe::Square square) noexcept
@@ -24,7 +24,7 @@ std::string ribi::tictactoe::SquareToStr(const tictactoe::Square square) noexcep
     case Square::player2: return "O";
   }
   assert(!"Should not get here");
-  throw std::logic_error("TicTacToe::SquareToStr: unknown square");
+  return " ";
 }
 
 ribi::tictactoe::Square ribi::tictactoe::StateToSquare(const int state)

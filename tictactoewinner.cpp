@@ -13,7 +13,7 @@ std::string ribi::tictactoe::WinnerToName(const ribi::tictactoe::Winner winner) 
     case Winner::no_winner: return "no_winner";
   }
   assert(!"Should not get here");
-  throw std::logic_error("ribi::WinnerToName: unknown winner");
+  return "no_winner";
 }
 
 std::string ribi::tictactoe::WinnerToStr(const ribi::tictactoe::Winner winner) noexcept
@@ -22,11 +22,11 @@ std::string ribi::tictactoe::WinnerToStr(const ribi::tictactoe::Winner winner) n
   {
     case Winner::player1  : return "X";
     case Winner::player2  : return "O";
-    case Winner::draw     : //return "*";
-    case Winner::no_winner: //return " ";
+    case Winner::draw     :
+    case Winner::no_winner:
       assert(!"Should not get here");
-      throw std::logic_error("ribi::WinnerToStr: unknown winner");
+      return " ";
   }
   assert(!"Should not get here");
-  throw std::logic_error("ribi::WinnerToStr: unknown winner");
+  return " ";
 }
