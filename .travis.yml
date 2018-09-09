@@ -41,19 +41,19 @@ before_script:
 script: 
   # Console test
   - qmake -qt=qt5 TicTacToeConsoleTest.pro
-  - make debug
+  - make --silent debug
   - ./TicTacToeConsoleTest
   # Console
   - qmake -qt=qt5 TicTacToeConsole.pro
-  - make debug
+  - make --silent debug
   #- ./TicTacToeConsole & # Do not, this causes Travis CI to play the game with the next commands
   # Desktop Qt
   - qmake -qt=qt5 TicTacToeDesktopQt.pro
-  - make debug
+  - make --silent debug
   - ./TicTacToeDesktopQt &
   # Website
   - qmake -qt=qt5 TicTacToeWebsite.pro
-  - make debug
+  - make --silent debug
   - ./TicTacToeWebsite &
   - sleep 10
   # cppcheck
