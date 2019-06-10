@@ -17,11 +17,14 @@ install:
   - sudo apt-get install -qq cppcheck
   # Codecov
   - sudo pip install codecov
+  # Check dead links
+  - sudo apt-get install -qq npm
+  - npm config set strict-ssl false
+  - sudo npm install -g markdown-link-check
   # OCLint
   - ./install_oclint
   # Others
   - ./download_other_githubs
-
 
 services:
  - xvfb
@@ -49,6 +52,9 @@ script:
   # Get code coverage
   - ./get_code_cov >/dev/null
   - codecov
+  # Check dead links
+  - rm .travis.yml
+  - ./scripts/check_dead_links
   # Call OCLint
   - ./do_oclint
 
