@@ -1,7 +1,7 @@
 #pragma GCC diagnostic push
 
-#pragma GCC diagnostic ignored "-Wunused-local-typedefs"
-#pragma GCC diagnostic ignored "-Wunused-but-set-parameter"
+
+
 #include "qttictactoecanvas.h"
 
 #ifdef SUPPORT_RETRO_VERSION_OF_TICTACTOE_AGAIN_20150918
