@@ -5,12 +5,12 @@
 #include <utility>
 #include <vector>
 
-#pragma GCC diagnostic push
+
 
 
 
 #include "tictactoefwd.h"
-#pragma GCC diagnostic pop
+
 
 namespace ribi {
 namespace tictactoe {

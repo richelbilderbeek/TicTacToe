@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 
 
@@ -12,7 +12,7 @@
 #include "textcanvas.h"
 #include "tictactoewidget.h"
 #include "qttictactoewidget.h"
-#pragma GCC diagnostic pop
+
 
 ribi::tictactoe::QtTicTacToeCanvas::QtTicTacToeCanvas()
   : QtCanvas(CreateCanvas()),

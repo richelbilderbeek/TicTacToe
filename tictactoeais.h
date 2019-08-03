@@ -3,12 +3,12 @@
 
 #include <vector>
 
-#pragma GCC diagnostic push
+
 
 
 #include <boost/shared_ptr.hpp>
 #include "tictactoefwd.h"
-#pragma GCC diagnostic pop
+
 
 namespace ribi {
 namespace tictactoe {

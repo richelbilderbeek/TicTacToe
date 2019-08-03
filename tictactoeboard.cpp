@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 
 #include "tictactoeboard.h"
@@ -11,7 +11,7 @@
 #include <stdexcept>
 
 #include "tictactoehelper.h"
-#pragma GCC diagnostic pop
+
 
 ///TicTacToe default contructor creates an empty board,
 ///where the current turn is to player1.

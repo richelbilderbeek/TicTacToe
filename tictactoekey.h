@@ -1,10 +1,10 @@
 #ifndef TICTACTOEKEY_H
 #define TICTACTOEKEY_H
 
-#pragma GCC diagnostic push
 
 
-#pragma GCC diagnostic pop
+
+
 
 namespace ribi {
 namespace tictactoe {

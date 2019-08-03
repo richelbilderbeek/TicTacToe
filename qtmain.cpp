@@ -1,10 +1,10 @@
-#pragma GCC diagnostic push
+
 
 
 
 #include <QApplication>
 #include "qttictactoemenudialog.h"
-#pragma GCC diagnostic pop
+
 
 int main(int argc, char *argv[])
 {

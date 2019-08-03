@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 
 
@@ -21,7 +21,7 @@
 #include "tictactoeai.h"
 
 #include "ui_qttictactoemenudialog.h"
-#pragma GCC diagnostic pop
+
 
 ribi::tictactoe::QtTicTacToeMenuDialog::QtTicTacToeMenuDialog(QWidget *parent) :
     QtHideAndShowDialog(parent),

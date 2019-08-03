@@ -22,7 +22,7 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 
 #include <cassert>
 
-#pragma GCC diagnostic push
+
 
 
 
@@ -31,7 +31,7 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 
 #include "wttictactoewidget.h"
 
-#pragma GCC diagnostic pop
+
 
 ribi::WtTicTacToeGameDialog::WtTicTacToeGameDialog(
   const bool display_close_button)

@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 #include "tictactoemenudialog.h"
 
@@ -13,7 +13,7 @@
 #include "tictactoegame.h"
 #include "tictactoewidget.h"
 
-#pragma GCC diagnostic pop
+
 
 ribi::tictactoe::TicTacToeMenuDialog::TicTacToeMenuDialog()
 {

@@ -4,14 +4,14 @@
 #ifdef SUPPORT_RETRO_VERSION_OF_TICTACTOE_AGAIN_20150918
 //#include "qtcanvas.h"
 
-#pragma GCC diagnostic push
+
 
 
 
 #include <boost/shared_ptr.hpp>
 
 #include "tictactoefwd.h"
-#pragma GCC diagnostic pop
+
 
 namespace ribi {
 namespace tictactoe {

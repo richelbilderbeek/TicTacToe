@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 
 
@@ -21,7 +21,7 @@
 
 #include "ui_qttictactoegamedialog.h"
 
-#pragma GCC diagnostic pop
+
 
 ribi::tictactoe::QtTicTacToeGameDialog::QtTicTacToeGameDialog(
   const boost::shared_ptr<Ai>& player1,

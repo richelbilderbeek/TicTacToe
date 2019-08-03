@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 
 
@@ -7,7 +7,7 @@
 #include <cassert>
 #include <sstream>
 #include "tictactoegame.h"
-#pragma GCC diagnostic pop
+
 
 ribi::tictactoe::Widget::Widget()
   : m_signal_changed{},

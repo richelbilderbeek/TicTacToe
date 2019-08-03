@@ -23,7 +23,7 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 
 #include <iosfwd>
 
-#pragma GCC diagnostic push
+
 
 
 #include <boost/shared_ptr.hpp>
@@ -34,7 +34,7 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 #include "tictactoesquare.h"
 #include "tictactoewinner.h"
 #include "tictactoefwd.h"
-#pragma GCC diagnostic pop
+
 
 namespace ribi {
 namespace tictactoe {

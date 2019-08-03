@@ -21,13 +21,13 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 #ifndef WTTICTACTOEMENUDIALOG_H
 #define WTTICTACTOEMENUDIALOG_H
 
-#pragma GCC diagnostic push
+
 
 
 
 #include <boost/signals2.hpp>
 #include <Wt/WContainerWidget>
-#pragma GCC diagnostic pop
+
 
 namespace ribi {
 

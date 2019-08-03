@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 
 
@@ -9,7 +9,7 @@
 
 #include "ui_qttictactoewinnerdialog.h"
 
-#pragma GCC diagnostic pop
+
 
 ribi::tictactoe::QtTicTacToeWinnerDialog::QtTicTacToeWinnerDialog(QWidget *parent) :
     QtHideAndShowDialog(parent),

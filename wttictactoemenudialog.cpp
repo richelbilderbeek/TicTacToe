@@ -22,7 +22,7 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 
 #include <cassert>
 
-#pragma GCC diagnostic push
+
 
 
 
@@ -38,7 +38,7 @@ along with this program.If not, see <http://www.gnu.org/licenses/>.
 #include "wtautoconfig.h"
 #include "wttictactoegamedialog.h"
 #include "wttictactoewidget.h"
-#pragma GCC diagnostic pop
+
 
 ribi::tictactoe::WtTicTacToeMenuDialog::WtTicTacToeMenuDialog()
 {

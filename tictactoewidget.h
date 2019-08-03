@@ -3,7 +3,7 @@
 
 #include <vector>
 
-#pragma GCC diagnostic push
+
 
 
 
@@ -13,7 +13,7 @@
 #include "tictactoekey.h"
 #include "tictactoeplayer.h"
 #include "tictactoewinner.h"
-#pragma GCC diagnostic pop
+
 
 namespace ribi {
 namespace tictactoe {

@@ -1,6 +1,6 @@
 #ifndef QTTICTACTOEGAMEDIALOG_H
 #define QTTICTACTOEGAMEDIALOG_H
-#pragma GCC diagnostic push
+
 
 
 
@@ -11,7 +11,7 @@
 #include <boost/shared_ptr.hpp>
 
 #include "tictactoefwd.h"
-#pragma GCC diagnostic pop
+
 
 namespace Ui {
   class QtTicTacToeGameDialog;

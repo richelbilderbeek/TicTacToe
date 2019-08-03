@@ -1,12 +1,12 @@
 #ifndef QTTICTACTOEMENUDIALOG_H
 #define QTTICTACTOEMENUDIALOG_H
 
-#pragma GCC diagnostic push
+
 
 
 
 #include "qthideandshowdialog.h"
-#pragma GCC diagnostic pop
+
 
 namespace Ui {
   class QtTicTacToeMenuDialog;

@@ -2,7 +2,7 @@
 
 #include <cassert>
 
-#pragma GCC diagnostic push
+
 
 
 #include <boost/shared_ptr.hpp>
@@ -11,7 +11,7 @@
 #include "tictactoegame.h"
 #include "tictactoehelper.h"
 
-#pragma GCC diagnostic pop
+
 
 std::string ribi::tictactoe::Ai::GetVersion() noexcept
 {

@@ -1,13 +1,13 @@
 #ifndef TICTACTOEHELPER_H
 #define TICTACTOEHELPER_H
 
-#pragma GCC diagnostic push
+
 
 
 #include "tictactoeplayer.h"
 #include "tictactoesquare.h"
 #include "tictactoewinner.h"
-#pragma GCC diagnostic pop
+
 
 namespace ribi {
 namespace tictactoe {
