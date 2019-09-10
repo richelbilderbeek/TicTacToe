@@ -10,8 +10,6 @@ install:
   - sudo apt install -qq libboost-all-dev
   # Qt5
   - sudo apt-get install -qq qt5-qmake qt5-default
-  # Wt
-  - sudo apt-get install witty witty-dbg witty-dev witty-doc
   # cppcheck
   - sudo apt-get install -qq cppcheck
   # Codecov
@@ -42,10 +40,10 @@ script:
   - make --silent debug
   - ./TicTacToeDesktopQt &
   # Website
-  - qmake -qt=qt5 TicTacToeWebsite.pro
-  - make --silent debug
-  - ./TicTacToeWebsite &
-  - sleep 10
+  #- qmake -qt=qt5 TicTacToeWebsite.pro
+  #- make --silent debug
+  #- ./TicTacToeWebsite &
+  #- sleep 10
   # cppcheck
   - cppcheck --quiet --error-exitcode=1 . || true
   # Get code coverage
