@@ -1,11 +1,11 @@
 # TicTacToe
 
-Branch|[![Travis CI logo](TravisCI.png)](https://travis-ci.org)|[![Codecov logo](Codecov.png)](https://www.codecov.io)
----|---|---
-master|[![Build Status](https://travis-ci.org/richelbilderbeek/TicTacToe.svg?branch=master)](https://travis-ci.org/richelbilderbeek/TicTacToe)|[![codecov.io](https://codecov.io/github/richelbilderbeek/TicTacToe/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/TicTacToe/branch/master)
-develop|[![Build Status](https://travis-ci.org/richelbilderbeek/TicTacToe.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/TicTacToe)|[![codecov.io](https://codecov.io/github/richelbilderbeek/TicTacToe/coverage.svg?branch=develop)](https://codecov.io/github/richelbilderbeek/TicTacToe/branch/develop)
+Branch   |[GitHub Actions](https://github.com/richelbilderbeek/TicTacToe/actions)                                  |[![Travis CI logo](TravisCI.png)](https://travis-ci.org)                                                                                |[![Codecov logo](Codecov.png)](https://www.codecov.io)
+---------|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+`master` |![GitHub Actions](https://github.com/richelbilderbeek/TicTacToe/workflows/check/badge.svg?branch=master) |[![Build Status](https://travis-ci.org/richelbilderbeek/TicTacToe.svg?branch=master)](https://travis-ci.org/richelbilderbeek/TicTacToe) |[![codecov.io](https://codecov.io/github/richelbilderbeek/TicTacToe/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/TicTacToe/branch/master)
+`develop`|![GitHub Actions](https://github.com/richelbilderbeek/TicTacToe/workflows/check/badge.svg?branch=develop)|[![Build Status](https://travis-ci.org/richelbilderbeek/TicTacToe.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/TicTacToe)|[![codecov.io](https://codecov.io/github/richelbilderbeek/TicTacToe/coverage.svg?branch=develop)](https://codecov.io/github/richelbilderbeek/TicTacToe/branch/develop)
 
-C++ tic-tac-toe game
+C++ tic-tac-toe game.
 
 ![Qt game dialog](screenshots/QtGameDialog.png)
 
