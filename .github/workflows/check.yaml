@@ -1,0 +1,45 @@
+on:
+  push:
+  pull_request:
+
+name: check
+
+jobs:
+  check:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v2
+
+      - name: install boost
+        run: sudo apt install libboost-all-dev
+
+      - name: Install Codecov
+        run: sudo pip install codecov
+
+      - name: install OCLint
+        run: ./install_oclint.sh
+
+      - name: download other repos
+        run: ./download_other_github_repos.sh
+
+      - name: qmake tests
+        run: qmake -qt=qt5 TicTacToeConsoleTest.pro
+
+      - name: make tests
+        run: make --silent debug
+
+      - name: run tests
+        run: ./TicTacToeConsoleTest
+
+      - name: Measure codecov
+        run: |
+          ./get_code_cov.sh >/dev/null
+          codecov >/dev/null
+          bash <(curl -s https://codecov.io/bash)
+
+      - name: lint
+        run: ./do_oclint.sh
+
