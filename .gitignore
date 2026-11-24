@@ -28,3 +28,6 @@
 *.app
 Makefile
 *.pro.user
+
+# Generated when building the website
+site/
