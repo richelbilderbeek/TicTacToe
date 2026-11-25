@@ -10,6 +10,7 @@
 #include "tictactoeboard.h"
 #include "tictactoegame.h"
 #include "tictactoehelper.h"
+#include <random>
 
 
 
@@ -147,7 +148,7 @@ std::pair<int,int> ribi::tictactoe::AiEnforceDraw::SuggestMove(
   //Find moves with maximum likedness
   std::vector<std::pair<int,int>> best_liked( (*moves.rbegin()).second);
   //Choose one at random
-  std::random_shuffle(best_liked.begin(),best_liked.end());
+  std::shuffle(best_liked.begin(),best_liked.end(),std::mt19937{std::random_device{}()});
   assert(!best_liked.empty());
   assert(game.CanDoMove(best_liked[0].first,best_liked[0].second));
   return best_liked[0];
@@ -274,7 +275,7 @@ std::pair<int,int> ribi::tictactoe::AiEnforceWin::SuggestMove(
   //Find moves with maximum likedness
   std::vector<std::pair<int,int>> best_liked( (*moves.rbegin()).second);
   //Choose one at random
-  std::random_shuffle(best_liked.begin(),best_liked.end());
+  std::shuffle(best_liked.begin(),best_liked.end(),std::mt19937{std::random_device{}()});
   assert(!best_liked.empty());
   assert(game.CanDoMove(best_liked[0].first,best_liked[0].second));
   return best_liked[0];
@@ -321,7 +322,7 @@ std::pair<int,int> ribi::tictactoe::AiPlayRandom::SuggestMove(
   //Find moves with maximum likedness
   std::vector<std::pair<int,int>> best_liked( (*moves.rbegin()).second);
   //Choose one at random
-  std::random_shuffle(best_liked.begin(),best_liked.end());
+  std::shuffle(best_liked.begin(),best_liked.end(),std::mt19937{std::random_device{}()});
   assert(!best_liked.empty());
   assert(game.CanDoMove(best_liked[0].first,best_liked[0].second));
   return best_liked[0];

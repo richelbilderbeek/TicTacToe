@@ -4,6 +4,7 @@
 
 #include "qttictactoegamedialog.h"
 
+#include <QScreen>
 #include <cassert>
 #include <functional>
 #include <stdexcept>
@@ -44,7 +45,7 @@ ribi::tictactoe::QtTicTacToeGameDialog::QtTicTacToeGameDialog(
 
   {
     //Put the dialog in the screen center
-    const QRect screen = QApplication::desktop()->screenGeometry();
+    const QRect screen = QGuiApplication::primaryScreen()->geometry();
     this->setGeometry(0,0,3 * screen.width() / 4,3 * screen.height() / 4);
     this->move( screen.center() - this->rect().center() );
   }

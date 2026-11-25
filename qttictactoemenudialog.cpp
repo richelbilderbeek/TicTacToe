@@ -4,6 +4,7 @@
 
 #include "qttictactoemenudialog.h"
 
+#include <QScreen>
 #include <cassert>
 #include <boost/make_shared.hpp>
 
@@ -68,7 +69,7 @@ void ribi::tictactoe::QtTicTacToeMenuDialog::on_button_start_old_school_clicked(
   };
   {
     //Put the dialog in the screen center
-    const QRect screen = QApplication::desktop()->screenGeometry();
+    const QRect screen = QGuiApplication::primaryScreen()->geometry();
     d->setGeometry(
       0,0,102,102);
     d->move( screen.center() - this->rect().center() );
