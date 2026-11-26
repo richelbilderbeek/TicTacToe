@@ -2,7 +2,7 @@
 site_name = "Tic-Tac-Toe"
 site_url = "https://richelbilderbeek.github.io/TicTacToe/"
 repo_url = "https://github.com/richelbilderbeek/TicTacToe"
-edit_uri = "blob/master/docs/"
+edit_uri = "blob/main/docs/"
 
 nav = [
   { "Start" = "README.md"}
