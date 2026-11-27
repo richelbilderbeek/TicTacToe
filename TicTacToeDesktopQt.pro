@@ -5,7 +5,7 @@ include($$PWD/ribi_classes/CppMenuDialog/CppMenuDialog.pri)
 include($$PWD/ribi_classes/CppQtAboutDialog/CppQtAboutDialog.pri)
 include($$PWD/ribi_classes/CppQtHideAndShowDialog/CppQtHideAndShowDialog.pri)
 
-include(../DotMatrix/DotMatrix.pri)
+include($$PWD/dot_matrix/DotMatrix.pri)
 include(TicTacToe.pri)
 include(QtTicTacToeWidget.pri)
 

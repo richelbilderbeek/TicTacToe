@@ -1,4 +1,4 @@
-include(../RibiLibraries/BoostAll.pri)
+include($$PWD/ribi_libraries/BoostAll.pri)
 
 include($$PWD/ribi_classes/CppAbout/CppAbout.pri)
 include($$PWD/ribi_classes/CppFileIo/CppFileIo.pri)
@@ -9,7 +9,7 @@ include($$PWD/ribi_classes/CppWtAutoConfig/CppWtAutoConfig.pri)
 
 #Specific, console
 include($$PWD/ribi_classes/CppCanvas/CppCanvas.pri)
-include(../DotMatrix/DotMatrix.pri)
+include($$PWD/dot_matrix/DotMatrix.pri)
 include($$PWD/ribi_classes/CppImageCanvas/CppImageCanvas.pri)
 include($$PWD/ribi_classes/CppTextCanvas/CppTextCanvas.pri)
 

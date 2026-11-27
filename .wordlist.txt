@@ -1,6 +1,8 @@
 Bilderbeek's
 Codecov
+DotMatrix
 RibiClasses
+RibiLibraries
 Richel
 Richèl
 Tac
