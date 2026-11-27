@@ -1,21 +1,20 @@
 include(../RibiLibraries/BoostAll.pri)
 
-include(../RibiClasses/CppAbout/CppAbout.pri)
-include(../RibiClasses/CppFileIo/CppFileIo.pri)
-include(../RibiClasses/CppHelp/CppHelp.pri)
-include(../RibiClasses/CppMenuDialog/CppMenuDialog.pri)
-include(../RibiClasses/CppWtAboutDialog/CppWtAboutDialog.pri)
-include(../RibiClasses/CppWtAutoConfig/CppWtAutoConfig.pri)
+include($$PWD/ribi_classes/CppAbout/CppAbout.pri)
+include($$PWD/ribi_classes/CppFileIo/CppFileIo.pri)
+include($$PWD/ribi_classes/CppHelp/CppHelp.pri)
+include($$PWD/ribi_classes/CppMenuDialog/CppMenuDialog.pri)
+include($$PWD/ribi_classes/CppWtAboutDialog/CppWtAboutDialog.pri)
+include($$PWD/ribi_classes/CppWtAutoConfig/CppWtAutoConfig.pri)
 
 #Specific, console
-include(../RibiClasses/CppCanvas/CppCanvas.pri)
+include($$PWD/ribi_classes/CppCanvas/CppCanvas.pri)
 include(../DotMatrix/DotMatrix.pri)
-include(../RibiClasses/CppImageCanvas/CppImageCanvas.pri)
-include(../RibiClasses/CppTextCanvas/CppTextCanvas.pri)
-include(../RibiClasses/CppTicTacToe/CppTicTacToe.pri)
+include($$PWD/ribi_classes/CppImageCanvas/CppImageCanvas.pri)
+include($$PWD/ribi_classes/CppTextCanvas/CppTextCanvas.pri)
 
 #Specific, web
-include(../RibiClasses/CppWtTicTacToeWidget/CppWtTicTacToeWidget.pri)
+include($$PWD/ribi_classes/CppWtTicTacToeWidget/CppWtTicTacToeWidget.pri)
 include(TicTacToe.pri)
 include(TicTacToeWebsite.pri)
 

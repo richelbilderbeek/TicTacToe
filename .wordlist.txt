@@ -1,5 +1,6 @@
 Bilderbeek's
 Codecov
+RibiClasses
 Richel
 Richèl
 Tac
