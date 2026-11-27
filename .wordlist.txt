@@ -4,6 +4,7 @@ Richel
 Richèl
 Tac
 TicTacToe
+Zensical
 codecov
 io
 tac
